@@ -1,0 +1,2 @@
+# don't want Pluto.jl backups to get added.
+notebooks/*backup*.jl
