@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.46
+# v0.19.37
 
 using Markdown
 using InteractiveUtils
@@ -413,7 +413,7 @@ fig3 = let t = t
 	p = plot(cell_centers(u0, 1), d2, label=L"u(ρ_L, P_L, ρ_R, P_R)", lw=2, dpi=600)
 	plot!(p , cell_centers(u0)..., density_field(uε, t), label=L"u\left(ρ_L, (1+ε)P_L, ρ_R, P_R\right)", ls=:dash)
 	plot!(p , cell_centers(u0)..., d4, label=L"u^\varepsilon"*" (after applying GTV)", lw=2)
-	plot!(p, cell_centers(u0)..., density_field(uε, t), linecolor=invisible(), fillrange=d4, fillalpha=0.4, label=L"O(\varepsilon)"*" error ")
+	plot!(p, cell_centers(u0)..., density_field(uε, t), linecolor=invisible(), fillrange=d4, fillalpha=0.4, label=L"O(\varepsilon^2)"*" error ")
 
 
 	ylabel!(p, L"ρ(x)")
